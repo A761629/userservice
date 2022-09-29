@@ -1,0 +1,45 @@
+----------------------------------------------------------------
+Thu Sep 29 19:59:27 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0183-89a6-fe96-00000e4da6d0 
+on database directory memory:C:\Users\A758023\git\repository2\user_service\2f4627d7-3eb5-429f-b29d-b8b2ff531eeb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/shared-cache/m4/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=C:\Users\A758023\git\repository2\user_service
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Sep 29 20:00:54 IST 2022:
+Shutting down instance a816c00e-0183-89a6-fe96-00000e4da6d0 on database directory memory:C:\Users\A758023\git\repository2\user_service\2f4627d7-3eb5-429f-b29d-b8b2ff531eeb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+----------------------------------------------------------------
+Thu Sep 29 20:00:57 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 13a100c9-0183-89a6-fe96-00000e4da6d0 
+on database directory memory:C:\Users\A758023\git\repository2\user_service\ee0c8d95-7b82-4aff-9700-e1a995669e11 with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/shared-cache/m4/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=C:\Users\A758023\git\repository2\user_service
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Sep 29 20:01:00 IST 2022:
+Shutting down instance 13a100c9-0183-89a6-fe96-00000e4da6d0 on database directory memory:C:\Users\A758023\git\repository2\user_service\ee0c8d95-7b82-4aff-9700-e1a995669e11 with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+----------------------------------------------------------------
+Thu Sep 29 20:01:02 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance fcd90178-0183-89a6-fe96-00000e4da6d0 
+on database directory memory:C:\Users\A758023\git\repository2\user_service\11a290ea-fc14-49b6-8f92-ec97c77b0749 with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/C:/shared-cache/m4/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b13
+user.dir=C:\Users\A758023\git\repository2\user_service
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
