@@ -48,13 +48,10 @@ public class UserRegistrationApiController {
 			//return new ResponseEntity<String>(env.getProperty("successMessage"), HttpStatus.CREATED);
 			
 			return new ResponseEntity<Map<String, String>>(Collections.singletonMap("Success", env.getProperty("successMessage")), HttpStatus.CREATED);
-			//env.getProperty("successMessage")
 			
-			//{\"success\":+" "+}
 		}
 		else 
-		//	return new ResponseEntity<String>("user exist , please try with other user", HttpStatus.CREATED);
-		return new ResponseEntity<Map<String, String>>(Collections.singletonMap("Error", env.getProperty("userexist")), HttpStatus.ALREADY_REPORTED);
+			return new ResponseEntity<Map<String, String>>(Collections.singletonMap("Error", env.getProperty("userexist")), HttpStatus.ALREADY_REPORTED);
 	}  
 	@GetMapping("/getUserDetails") 
 	private List<UserDetailsdto> getAllUsers()   
