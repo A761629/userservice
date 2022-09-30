@@ -15,17 +15,24 @@ import net.atos.air.user.repository.UserRepository;
 public class UserService {
 	@Autowired
 	UserRepository userRepository;
-	// getting all user Details
-
-	@TrackExecutionTime
+	/** This method will fetch all the registered user and return
+	 * @param 
+	 * @return List<UserDetails>
+	 */
+		@TrackExecutionTime
 	public List<UserDetails> getAllUser() {
 		List<UserDetails> userDetails = new ArrayList<UserDetails>();
 		userRepository.findAll().forEach(user -> userDetails.add(user));
 		return userDetails;
 	}
 
+	/**
+	 * This method will take UserDetailsdto as input and map to UserDetails entity and save the data in database.
+	 *  
+	 * @param UserDetailsdto
+	*/
 	@TrackExecutionTime
-	public void saveOrUpdate(UserDetailsdto UserDetailsdto) {
+	public void userRegistration(UserDetailsdto UserDetailsdto) {
 		UserDetails userDetails = new UserDetails();
 		userDetails.setUserName(UserDetailsdto.getUserName());
 		userDetails.setBirthdate(UserDetailsdto.getBirthdate());
@@ -36,6 +43,11 @@ public class UserService {
 		userRepository.save(userDetails);
 	}
 	
+	/**
+	 * This method will check if user already exist in database, and return the boolean to caller method. 
+	 * @param userName : String 
+	 * @return boolean
+	 */
 	public boolean  findByUserName(String userName) {
 		UserDetails userDetails =userRepository.findByUserName(userName);
 		return userDetails!=null && userDetails.getUserName().equalsIgnoreCase(userName) ? true :false;
