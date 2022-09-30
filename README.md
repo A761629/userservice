@@ -9,6 +9,7 @@ Details Of service below
 1.	userRegistration API is a HTTP REST API (POST) 
 		userRegistration API is will allow to registered the adult French residents  to create an account.
 URL : http://localhost:9024/userRegistration
+
 Request Body with attributes
 {
   "userName": "JohnSmith",  
@@ -27,6 +28,7 @@ Response samples
 		getUserDetails API used to get the details of registered user.
 	
 	URL : http://localhost:9024/getUserDetails
+  
   Response samples
 [
     {
