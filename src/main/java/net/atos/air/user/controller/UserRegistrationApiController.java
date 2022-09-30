@@ -45,14 +45,12 @@ public class UserRegistrationApiController {
 	{  
 		if(!userService.findByUserName(users.getUserName())) {
 			userService.saveOrUpdate(users);  
-			//return new ResponseEntity<String>(env.getProperty("successMessage"), HttpStatus.CREATED);
-			
 			return new ResponseEntity<Map<String, String>>(Collections.singletonMap("Success", env.getProperty("successMessage")), HttpStatus.CREATED);
-			
 		}
 		else 
 			return new ResponseEntity<Map<String, String>>(Collections.singletonMap("Error", env.getProperty("userexist")), HttpStatus.ALREADY_REPORTED);
 	}  
+
 	@GetMapping("/getUserDetails") 
 	private List<UserDetailsdto> getAllUsers()   
 	{  
