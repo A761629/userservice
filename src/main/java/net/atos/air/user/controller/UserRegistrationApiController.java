@@ -44,7 +44,7 @@ public class UserRegistrationApiController {
 	private ResponseEntity<Map<String, String>>  userRegistration(@Valid @RequestBody UserDetailsdto users)   
 	{  
 		if(!userService.findByUserName(users.getUserName())) {
-			userService.saveOrUpdate(users);  
+			userService.userRegistration(users);  
 			return new ResponseEntity<Map<String, String>>(Collections.singletonMap("Success", env.getProperty("successMessage")), HttpStatus.CREATED);
 		}
 		else 
